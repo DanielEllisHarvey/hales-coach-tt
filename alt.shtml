@@ -1,0 +1,16 @@
+<html>
+<link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+
+<!-- Start of the website -->
+<title>
+Coach Timetable
+</title>
+<button>HALESOWEN COACHES</button>
+<!-- <h3 class="top mbox"><a href="inbound.shtml">inbound</a> outbound</h3> -->
+<u style="color: #55d"><h2 style="color: #55d; font-size: clamp(16px,calc(1.0vh + 0.6vw), 50px); padding-bottom: 2vh">Timetable</h2></u>
+<p id="time" class="time"></p>
+<table id="coachTable"></table>
+<p class="mbox">Note: If a coach is not shown then it has either passed, or is more than 3 hours away</p>
+<!-- made by 206339 -->
+</html>
