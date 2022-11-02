@@ -5,7 +5,7 @@
     if(navigator.userAgent.search(/Firefox/g) != -1)
     {
         console.log("firefox");
-        window.location.pathname = "/alt.shtml";
+        window.location.pathname = "/fallback";
     }
     </script>
 <script type="module" src="main.js"></script>
