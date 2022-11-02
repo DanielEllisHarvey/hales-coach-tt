@@ -1,4 +1,4 @@
-import times from "times.json" assert {type: "json"};
+import times from "./times.json" assert {type: "json"};
 //shows the time every second
 setInterval(function () {var d = new Date();document.getElementById("time").innerHTML = String("Current time: "+String(d).substr(16,8))}, 1000);
 //stuff you can edit
@@ -9,7 +9,7 @@ const cT = times.coachTimes;
 let tMs = [];
 function getMs(n) {
 	let dT = new Date();
-	now = Date.parse("01 Jan 2020 "+String(dT).substr(16,8));
+	let now = Date.parse("01 Jan 2020 "+String(dT).substr(16,8));
 	tMs[n] = Date.parse(String("01 Jan 2020 "+cT[n]+":00"));
 	let tO = tMs[n] - now;
 	if ((Math.sign(tO) != -1) && (dT.getDay() != (6||0))) {
