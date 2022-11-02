@@ -6,6 +6,8 @@ setInterval(function () {var d = new Date();document.getElementById("time").inne
 const cL = times.coachNames;
 //coach times
 const cT = times.coachTimes;
+//number of times per name
+const nT = 2;
 let tMs = [];
 function getMs(n) {
 	let dT = new Date();
@@ -37,7 +39,7 @@ function createTable() {
 	let cTT = "<tr><th>Coach</th><th>arrival time</th></tr>";
 	for (let i=0;i<cT.length;i++) {
 		if (getMs(i) != 0) {
-			cTT += "<tr class=\"body\"><td>"+cL[Math.floor(i/2)]+"</td><td>"+getMs(i)+cT[i]+"</td></tr>";
+			cTT += "<tr class=\"body\"><td>"+cL[Math.floor(i/nT)]+"</td><td>"+getMs(i)+cT[i]+"</td></tr>";
 		};
 	};
 	if (cTT != "<tr><th>Coach</th><th>arrival time</th></tr>") {
