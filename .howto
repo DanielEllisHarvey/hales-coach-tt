@@ -1,5 +1,5 @@
 How to edit and use the timetable.
 
 The JSON file contains "coachNames" and "coachTimes".
-The coach names are linked to the times by {floor 1/2 (coachNames) = (coachTimes);
+The coach names are linked to the times by {floor 1/2 (coachNames) = (coachTimes)};
 so one coach name represents the first 2 coach times.
